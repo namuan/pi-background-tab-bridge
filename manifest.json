@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Pi Background Tab Bridge",
+  "version": "0.1.0",
+  "description": "Let Pi inspect and interact with one explicitly approved Chrome tab without activating it.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": ["http://127.0.0.1:43127/*"],
+  "optional_host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_popup": "popup.html", "default_title": "Pi tab access" }
+}

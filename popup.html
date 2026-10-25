@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pi tab access</title>
+  <style>
+    body { width: 320px; margin: 0; padding: 16px; color: #202124; font: 14px system-ui, sans-serif; }
+    h1 { margin: 0 0 12px; font-size: 17px; }
+    p { line-height: 1.45; }
+    button { width: 100%; padding: 9px; border: 0; border-radius: 6px; cursor: pointer; }
+    #approve { background: #1a73e8; color: white; }
+    #revoke { margin-top: 8px; background: #eee; }
+    #status { overflow-wrap: anywhere; color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Pi background tab access</h1>
+  <p id="status">Checking status…</p>
+  <label for="token">Bridge token</label>
+  <input id="token" type="password" autocomplete="off" style="box-sizing:border-box;width:100%;margin:6px 0 12px;padding:8px">
+  <button id="approve">Allow Pi to use this tab</button>
+  <button id="grant-all">Allow Pi on all websites</button>
+  <button id="revoke">Revoke tab access</button>
+  <script src="popup.js"></script>
+</body>
+</html>

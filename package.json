@@ -1,0 +1,12 @@
+{
+  "name": "pi-background-tab-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": { "pi-background-tab-bridge": "./bin/pi-background-tab-bridge.mjs" },
+  "scripts": {
+    "start": "node bridge.mjs",
+    "setup:global": "npm link"
+  },
+  "dependencies": { "ws": "^8.18.0" }
+}

@@ -1,0 +1,11 @@
+node_modules/
+.pi-bridge-token
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+!package-lock.json
+coverage/
+dist/
+.DS_Store
